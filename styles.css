@@ -1,0 +1,28 @@
+/*
+css styles the content of an HTML page.
+Styles can be inline, between <style> tag 
+or called using the <link> or @import methods
+*/
+
+h1,h2{
+	color: orange;
+}
+
+li{
+	color: green;
+	font-weight: bold;
+}
+
+/*classes start with . */
+.winner{
+	color:blue;
+}
+
+/*IDs start with #, though we haven't used them yet.*/
+#looser{
+	color: red;
+}
+
+.tw{
+	color: 	
+}
