@@ -12,9 +12,10 @@
 	<!-- theme -->
 	<link rel="stylesheet" href="css/bootstrap-theme.css" title="styles0">
 	<link rel="alternate stylesheet" href="css/material.css" title="styles1">
-	<link rel="alternate stylesheet" href="css/metro.css" title="styles2">
+	<link rel="alternate stylesheet" href="css/metro.css" title="metro">
 	<link rel="alternate stylesheet" href="css/flatly.css" title="styles3">
-	<link rel="alternate stylesheet" href="css/ios8.css" title="styles4">
+	<link rel="alternate stylesheet" href="css/ios7.css" title="styles4">
+	<link rel="alternate stylesheet" href="css/metro-bootstrap.css" title="metro2">
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -27,26 +28,64 @@
 </head>
 <body>
 <div class="container">
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">Stylin'</a>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-ex1-collapse">
+		<ul class="nav navbar-nav">
+			<li class="stylish active">
+				<a href="#" rel="styles0" onclick="setActiveStyleSheet('styles0')">Bootstrap 3</a>
+			</li>
+			<li class="stylish">
+				<a href="#" rel="styles1" onclick="setActiveStyleSheet('styles1')">Material Design</a>
+			</li>
+			<li class="stylish">
+				<a href="#" rel="metro" onclick="setActiveStyleSheet('metro')">Metro 1</a>
+			</li>
+			<li class="stylish">
+				<a href="#" rel="metro2" onclick="setActiveStyleSheet('metro2')">Metro 2</a>
+			</li>
+			<li class="stylish">
+				<a href="#" rel="styles3" onclick="setActiveStyleSheet('styles3')">Flatly</a>
+			</li>
+			<li class="stylish">
+				<a href="#" rel="styles4" onclick="setActiveStyleSheet('styles4')">iOS 7</a>
+			</li>
+
+		</ul>
+	</div><!-- /.navbar-collapse -->
+</nav>
+
 	<div class="row">
-		<h1 class="text-center">Hello Forms</h1>
-		<a href="#" class="btn btn-default" rel="styles0" onclick="setActiveStyleSheet('styles0')">
+		<h3 class="text-center">Forms</h3>
+<!-- 		
+	<a href="#" class="btn btn-default stylish active" rel="styles0" onclick="setActiveStyleSheet('styles0')">
 			Bootstrap Native
 		</a>
-		<a href="#" class="btn btn-default" rel="styles1" onclick="setActiveStyleSheet('styles1')">
+		<a href="#" class="btn btn-default stylish" rel="styles1" onclick="setActiveStyleSheet('styles1')">
 			Material Design
 		</a>
-		<a href="#" class="btn btn-default" rel="styles1" onclick="setActiveStyleSheet('styles2')">
+		<a href="#" class="btn btn-default stylish" rel="styles1" onclick="setActiveStyleSheet('styles2')">
 			Metro Design
 		</a>
-		<a href="#" class="btn btn-default" rel="styles1" onclick="setActiveStyleSheet('styles3')">
+		<a href="#" class="btn btn-default stylish" rel="styles1" onclick="setActiveStyleSheet('styles3')">
 			Flatly Design
 		</a>
-		<a href="#" class="btn btn-default" rel="styles1" onclick="setActiveStyleSheet('styles4')">
-			iOS 8
+		<a href="#" class="btn btn-default stylish" rel="styles1" onclick="setActiveStyleSheet('styles4')">
+			iOS 7
 		</a>
-
-	</div>
-	<div class="row">
+-->
 		<div class="col-md-6 col-md-offset-3">
 			<form>
 				<div class="form-group">
@@ -62,23 +101,102 @@
 					<input type="password" id="pwPW" placeholder="pick a password" class="form-control">
 				</div>
 			</form>
-
-			<div class="btn-group">
-				<button type="button" class="btn btn-default">	Monday</button>
-				<button type="button" class="btn btn-primary">	Tuesday</button>
-				<button type="button" class="btn btn-success">	Wednesday</button>
-				<button type="button" class="btn btn-info">			Thursday</button>
-				<button type="button" class="btn btn-warning">	Friday</button>
-				<button type="button" class="btn btn-danger">		Saturday</button>
-			</div>				
-
-			</verbatim>
+		</div>
+	</div>
+	<!-- end of row 1 -->
+	<div class="row">
+		<h3 class="text-center">Button Groups</h3>
+		<div class="btn-group">
+			<button type="button" class="btn btn-default">	Monday</button>
+			<button type="button" class="btn btn-primary">	Tuesday</button>
+			<button type="button" class="btn btn-success">	Wednesday</button>
+			<button type="button" class="btn btn-info">			Thursday</button>
+			<button type="button" class="btn btn-warning">	Friday</button>
+			<button type="button" class="btn btn-danger">		Saturday</button>
+		</div>				
+	</div>
+	<!-- end of row 2 -->
+	<div class="row">
+		<h3 class="text-center">
+			Dismissable Alerts
+		</h3>
+		<div class="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<strong>Title!</strong> Alert body ...
+		</div>
+		<div class="alert alert-primary">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<strong>Title!</strong> Alert body ...
+		</div>
+		<div class="alert alert-success">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<strong>Title!</strong> Alert body ...
+		</div>
+		<div class="alert alert-info">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<strong>Title!</strong> Alert body ...
+		</div>
+		<div class="alert alert-warning">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<strong>Title!</strong> Alert body ...
+		</div>
+		<div class="alert alert-danger">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<strong>Title!</strong> Alert body ...
+		</div>
+	</div> 
+	<!-- end of row 3 -->
+	<div class="row">
+		<h3 class="text-center">Modals</h3>
+			<a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Test modal</a>
+			<div class="modal fade" id="modal-id">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							These are not the droids you are looking for.
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+	</div>
+	<!-- end of row 4 -->
+<div class="footer">
+	<div class="container" style=" padding-top: 20px; padding-bottom: 20px">
+		<div class="bs-callout bs-callout-primary">
+			<h4>Credits:</h4>
+			A selections of Bootstrap themes from the web.
+			<br>
+			Twitter Bootstrap <br>
+			Material Design <br>
+			Metro <br>
+			iOS 7 <br>
+			Flatly <br>
 		</div>
 	</div>
 </div>
+			
+
+</div>
+
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<!-- Bootstrap JavaScript -->
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+   $(document).on('click', '.stylish', function() {
+       $(".stylish").removeClass("active");
+       $(this).addClass("active");
+   });
+	</script>
+
 </body>
 </html>
